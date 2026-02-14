@@ -1,1 +1,54 @@
+import React from "react";
 
+export default function SiteSimples() { return ( <div className="min-h-screen bg-gradient-to-b from-blue-600 to-indigo-800 text-white font-sans"> {/* Header */} <header className="flex justify-between items-center p-6 max-w-6xl mx-auto"> <h1 className="text-2xl font-bold">MeuSite</h1> <nav className="space-x-6"> <a href="#sobre" className="hover:underline">Sobre</a> <a href="#servicos" className="hover:underline">Serviços</a> <a href="#contato" className="hover:underline">Contato</a> </nav> </header>
+
+{/* Hero */}
+  <section className="text-center py-24 px-6">
+    <h2 className="text-4xl md:text-6xl font-extrabold mb-6">
+      Crie algo incrível 🚀
+    </h2>
+    <p className="text-lg max-w-2xl mx-auto mb-8">
+      Este é um site simples criado do zero usando apenas React e Tailwind.
+    </p>
+    <button className="bg-white text-blue-700 font-bold px-8 py-4 rounded-2xl shadow-lg hover:scale-105 transition-transform">
+      Começar Agora
+    </button>
+  </section>
+
+  {/* Serviços */}
+  <section id="servicos" className="py-20 px-6 max-w-6xl mx-auto">
+    <h3 className="text-3xl font-bold text-center mb-12">Nossos Serviços</h3>
+    <div className="grid md:grid-cols-3 gap-8">
+      <div className="bg-white text-gray-800 p-6 rounded-2xl shadow-lg">
+        <h4 className="text-xl font-semibold mb-4">Web Design</h4>
+        <p>Criamos layouts modernos e responsivos para seu negócio.</p>
+      </div>
+
+      <div className="bg-white text-gray-800 p-6 rounded-2xl shadow-lg">
+        <h4 className="text-xl font-semibold mb-4">Desenvolvimento</h4>
+        <p>Transformamos ideias em aplicações rápidas e eficientes.</p>
+      </div>
+
+      <div className="bg-white text-gray-800 p-6 rounded-2xl shadow-lg">
+        <h4 className="text-xl font-semibold mb-4">Consultoria</h4>
+        <p>Ajudamos você a escolher a melhor estratégia digital.</p>
+      </div>
+    </div>
+  </section>
+
+  {/* Contato */}
+  <section id="contato" className="py-20 px-6 bg-indigo-900 text-center">
+    <h3 className="text-3xl font-bold mb-6">Entre em Contato</h3>
+    <p className="mb-8">Vamos transformar sua ideia em realidade.</p>
+    <button className="bg-white text-indigo-800 font-bold px-8 py-4 rounded-2xl shadow-lg hover:scale-105 transition-transform">
+      Falar Agora
+    </button>
+  </section>
+
+  {/* Footer */}
+  <footer className="text-center py-6 text-sm bg-indigo-950">
+    © {new Date().getFullYear()} MeuSite. Todos os direitos reservados.
+  </footer>
+</div>
+
+); }
